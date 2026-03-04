@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Crachá TecNova</title>
+</head>
+<body>
+        <div class="container">
+
+            <form id="badge-form">
+             <label for="username">Nome Completo:</label>
+             <input type="text" id="username" placeholder="Nome Completo">
+
+             <label for="position">Cargo:</label>
+             <input type="text" id="position" placeholder="Cargo">
+
+             <label for="departamento">Departamento:</label>
+                    <select name="departamento" id="departamento">
+                         <option value="Design">Design</option>
+                         <option value="Desenvolvimento">Desenvolvimento</option>
+                         <option value="Marketing">Marketing</option>
+                    </select>
+            
+             <button type="button" id="btn-gerar">Gerar Crachá</button>
+         </form>
+
+
+        <div class="badge" id="badge">
+
+            <div class="badge-content">
+                <div class="circulo"></div>
+                <h2 id="badge-department">Departamento</h2>
+                <p id="badge-name">Nome</p>
+                <p id="badge-position">Cargo</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+    <!-- include the script so the DOM elements referenced by script.js exist -->
+    <script src="script.js" defer></script>
+</html>
