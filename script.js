@@ -12,7 +12,7 @@ const circulo = document.querySelector('.circulo');
 
 
 button.addEventListener('click', function(event) {
-    // prevent form submission / page reload
+    
     event.preventDefault();
 
     const nome = fullName.value;
@@ -25,8 +25,7 @@ button.addEventListener('click', function(event) {
 
     const badge = document.getElementById('badge');
     const departamentoEscolhido = departamento.toLowerCase();
-
-    // set a default text colour that contrasts with the badge
+    
     let text = '';
 
     if (departamentoEscolhido === 'design') {
